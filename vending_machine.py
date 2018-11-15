@@ -1,6 +1,7 @@
 from byotest import *
-eur_coins = {100:20,50:20,20:20,10:20,5:20,2:20,1:20}
-usd_coins = {100:20,50:20,25:20,10:20,5:20,2:20,1:20}
+cn = 20
+eur_coins = {key : cn for key in [100,50,20,10,5,2,1]}
+usd_coins = {key : cn for key in [100,50,25,10,5,2,1]}
 def get_change(amount, coins = eur_coins):
     change = []
     coins_list = sorted(list(coins), reverse = True)
